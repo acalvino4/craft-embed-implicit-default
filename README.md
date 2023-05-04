@@ -1,6 +1,6 @@
 # Embed Implicit Default
 
-Extends the twig embed tag to allow an implicit default block
+Extends the twig embed tag to allow an implicit default block. This package enables the easy installation and complete encapsulation of this construct for Craft CMS, but the logic is implemented in [Twig Embed Implicit Default](https://github.com/acalvino4/twig-embed-implicit-default) to remain applicable to any framework using twig. See that package for full documentation.
 
 ## Requirements
 

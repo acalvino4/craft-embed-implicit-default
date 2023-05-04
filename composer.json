@@ -3,6 +3,7 @@
   "description": "Extends the twig embed tag to allow an implicit default block",
   "type": "craft-plugin",
   "license": "mit",
+  "version": "1.0.0",
   "support": {
     "issues": "https://github.com/acalvino4/craft-embed-implicit-default/issues?state=open",
     "source": "https://github.com/acalvino4/craft-embed-implicit-default",
@@ -11,6 +12,7 @@
   },
   "require": {
     "php": ">=8.0.2",
+    "acalvino4/twig-embed-implicit-default": "^1.0",
     "craftcms/cms": "^4.3.5"
   },
   "require-dev": {
@@ -19,19 +21,18 @@
   },
   "autoload": {
     "psr-4": {
-      "acalvino4\\craftembedimplicitdefault\\": "src/"
+      "acalvino4\\embed\\": "src/"
     }
   },
   "extra": {
     "handle": "embed-implicit-default",
     "name": "Embed Implicit Default",
     "developer": "acalvino4",
-    "documentationUrl": "https://github.com/acalvino4/craft-embed-implicit-default"
+    "documentationUrl": "https://github.com/acalvino4/twig-embed-implicit-default"
   },
   "scripts": {
-    "check-cs": "ecs check --ansi",
-    "fix-cs": "ecs check --ansi --fix",
-    "phpstan": "phpstan --memory-limit=1G"
+    "test": "ecs check --ansi && phpstan --memory-limit=1G",
+    "fix": "ecs check --ansi --fix"
   },
   "config": {
     "sort-packages": true,

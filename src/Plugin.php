@@ -1,9 +1,8 @@
 <?php
 
-namespace acalvino4\craftembedimplicitdefault;
+namespace acalvino4\embed;
 
 use Craft;
-use acalvino4\embed\Extension;
 use craft\base\Plugin as BasePlugin;
 
 /**
