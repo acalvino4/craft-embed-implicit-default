@@ -15,7 +15,7 @@ use craft\base\Plugin as BasePlugin;
  */
 class Plugin extends BasePlugin
 {
-    public string $schemaVersion = '1.0.0';
+    public string $schemaVersion = '1.0.1';
 
     // public static function config(): array
     // {
@@ -36,6 +36,9 @@ class Plugin extends BasePlugin
         //     // ...
         // });
 
+        if (Craft::$app->getRequest()->getIsCpRequest()) {
+            return;
+        };
         Craft::$app->view->registerTwigExtension(new Extension());
     }
 

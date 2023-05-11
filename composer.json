@@ -3,7 +3,7 @@
   "description": "Extends the twig embed tag to allow an implicit default block",
   "type": "craft-plugin",
   "license": "mit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "support": {
     "issues": "https://github.com/acalvino4/craft-embed-implicit-default/issues?state=open",
     "source": "https://github.com/acalvino4/craft-embed-implicit-default",
